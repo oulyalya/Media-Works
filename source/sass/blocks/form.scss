@@ -1,0 +1,27 @@
+.form {
+  @include flex(column);
+}
+
+.form label {
+  margin: 19px 0 12px;
+  letter-spacing: 0.5px;
+}
+
+.form input {
+  padding: 17px 10px 15px;
+  border: 1px solid $c_border;
+  appearance: none;
+  border-radius: 4px;
+
+  @include tablet {
+    padding: 20px 15px 21px;
+  }
+
+  @include mobile {
+    padding: 20px 15px 21px;
+  }
+}
+
+.form input::placeholder {
+  color: $c_placeholder;
+}

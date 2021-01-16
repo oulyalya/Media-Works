@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="автомобили, лизинг, аренда, подбор">
+  <meta name="description" content="Лизинг автомобилей, аренда атомобилей">
+  <title>Test for Media Works</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="preload" href="fonts/pt-mono-regular.woff2" as="font"> -->
+</head>
+
+<body>
+  <header class="page-header page-header--no-js">
+    <div class="page-header__container container">
+      <nav class="main-nav main-nav--no-js ">
+        <div class="main-nav__logo-wrapper">
+          <a class="main-nav__logo-link">
+            <svg class="main-nav__logo" width="86" height="43" viewbox="0 0 86 43">
+              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть
+              меню</span></button>
+        </div>
+        <div class="main-nav__list">
+          <a class="main-nav__link" href="#">Клиентам</a>
+          <a class="main-nav__link main-nav__link--icon main-nav__link--login" id="login" href="#">Войти</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="first">
+      <div class="first__container container">
+        <h1>Подбор авто в лизинг по&nbsp;выгодной цене</h1>
+        <p>IT платформа по быстрому поиску автомобиля от&nbsp;официальных дилеров РФ</p>
+        <a class="first__btn btn" href="#">Регистрация</a>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__container container">
+        <h2>Меньше условий – больше возможностей</h2>
+
+        <div class="advantages__item advantages__item--time">
+          <h3>Экономия времени</h3>
+          <p>Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на&nbsp;рекламу и
+            маркетинг.
+          </p>
+        </div>
+
+        <div class="advantages__item advantages__item--speed">
+          <h3>Никаких задержек</h3>
+          <p>Вы получаете запросы сразу же после&nbsp;отправки клиентом.</p>
+        </div>
+
+        <div class="advantages__item advantages__item--information">
+          <h3>Максимальная информативность</h3>
+          <p>В каждой заявке указан регион поиска, марка и модель авто, а так же индивидуальные запросы клиента.</p>
+        </div>
+
+        <div class="advantages__item advantages__item--convenience">
+          <h3>Удобство общения</h3>
+          <p>Для каждого запроса у вас открыт чат&nbsp;с&nbsp;клиентом с возможностью отправки документов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration">
+      <div class="registration__container container">
+        <div class="registration__wrapper">
+          <h2 class="visually-hidden">Регистрация</h2>
+          <p>Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
+          <a class="btn" href="#">Регистрация</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay">
+      <div class="popup" id="popup">
+        <h2>Авторизация</h2>
+        <form class="form" action="POST">
+          <label for="login-email">E-mail</label>
+          <input id="login-email" type="email" placeholder="Введите e-mail" required="">
+          <label for="login-password">Пароль</label>
+          <input id="login-password" type="password" placeholder="Введите пароль" required="">
+          <button class="popup__btn btn" type="submit">Войти</button>
+        </form>
+
+        <button class="popup__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+.advantages {
+  padding-top: 82px;
+  padding-bottom: 65px;
+
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+}
+
+.advantages__container {
+  @include flex(row);
+}
+
+.advantages h2 {
+  width: 100%;
+
+  @include title-two;
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__item {
+  width: 570px;
+  max-width: 49%;
+  min-height: 235px;
+  margin-bottom: 30px;
+  padding: 25px 40px;
+
+  background-color: $c_light-bg;
+  border-radius: 6px;
+
+  background-repeat: no-repeat;
+  background-size: 193px 193px;
+  background-position: 97.5% 51%;
+
+  &--time {
+    background-image: url("../img/bg-advantages-1.svg");
+  }
+
+  &--speed {
+    background-image: url("../img/bg-advantages-2.svg");
+  }
+
+  &--information {
+    background-image: url("../img/bg-advantages-3.svg");
+  }
+
+  &--convenience {
+    background-image: url("../img/bg-advantages-4.svg");
+  }
+
+  @media (min-width: 1024px) and (max-width: 1320px) {
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 120px 120px;
+    background-position: 98% 30px;
+  }
+
+  @include tablet {
+    min-height: 200px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 30px;
+    background-size: 80px 80px;
+    background-position: 97% 20px;
+  }
+
+  @include mobile {
+    width: 100%;
+    max-width: 450px;
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    background-size: 60px 60px;
+    background-position: 97% 20px;
+  }
+}
+
+.advantages__item:hover {
+  background-color: rgba($c_dark-bg, 0.06);
+  transition: 0.5s ease-in-out;
+}
+
+.advantages__item h3 {
+  max-width: 250px;
+  margin-bottom: 20px;
+
+  @include title-three;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include mobile {
+    max-width: 290px;
+    margin-bottom: 35px;
+  }
+}
+
+.advantages__item p {
+  max-width: 290px;
+  margin-top: 0;
+
+  @media (min-width: 1024px) and (max-width: 1195px) {
+    max-width: 220px;
+  }
+
+  @include tablet {
+    max-width: none;
+  }
+
+  @include mobile {
+    max-width: none;
+  }
+}

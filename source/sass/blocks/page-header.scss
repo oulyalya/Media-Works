@@ -1,0 +1,21 @@
+.page-header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 100;
+}
+
+.page-header--no-js {
+  @include mobile {
+    position: static;
+    transform: translateX(0);
+    background-color: $c_dark-one;
+    background-image: $dark-gradient;
+  }
+}
+
+.page-header__container {
+  @include flex(row);
+  align-items: center;
+}

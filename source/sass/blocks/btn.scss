@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 222px;
+  padding: 15px 60px;
+  background-color: $c_theme-accent;
+  border: 0 none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include font_one(18px, 1.2, $semi);
+  text-align: center;
+  color: white;
+
+  @include hover-effect;
+
+  @include tablet {
+    padding: 14px 50px;
+
+    @include font_one(17px, 1.2, $semi);
+  }
+
+  @include mobile {
+    padding: 20px 50px;
+    width: 100%;
+    min-width: 222px;
+    max-width: 320px;
+
+    @include font_one(16px, 1.2, $semi);
+  }
+}

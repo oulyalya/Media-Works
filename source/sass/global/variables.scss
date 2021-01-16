@@ -1,0 +1,31 @@
+$f_one: "Whitney", "Arial", sans-serif;
+$f_two: "Whitney Book", "Arial", sans-serif;
+$f_three: "Segoe UI", "Arial", sans-serif;
+$semi: 600;
+$med: 500;
+$reg: normal;
+
+$mobile-min-width: 320px;
+$mobile-max-width: 767px;
+$tablet-min-width: 768px;
+$tablet-max-width: 1023px;
+$desktop-min-width: 1024px;
+$desktop-max-width: 1450px;
+$mobile-pads: 15px;
+$tablet-pads: 25px;
+$desktop-pads: 140px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$c_theme-accent: #f25b24;
+$c_dark-one: #2d1686;
+$c_dark-two:#4e33b5;
+$c_light-bg: #f6f5f9;
+$c_dark-bg: #1c182f;
+$c_border: #dddae7;
+$c_placeholder: #918d9a;
+$c_text:#474351;
+$c_title: #2e2d35;
+
+$dark-gradient: linear-gradient(90deg, $c_dark-one 0%, $c_dark-two 100%);

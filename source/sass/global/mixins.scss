@@ -1,0 +1,129 @@
+@mixin tablet {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: 0) and (max-width: $mobile-max-width) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin container {
+  position: relative;
+  width: auto;
+  min-width: $desktop-min-width;
+  max-width: $desktop-max-width;
+  margin: 0 auto;
+  padding: 0 $desktop-pads;
+
+  @include tablet {
+    min-width: $tablet-min-width;
+    width: auto;
+    padding: 0 $tablet-pads;
+    overflow-x: hidden;
+  }
+
+  @include mobile {
+    min-width: $mobile-min-width;
+    width: 100%;
+    padding: 0 $mobile-pads;
+    overflow-x: hidden;
+  }
+}
+
+@mixin flex($flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+@mixin hover-effect {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+    outline: 0 none;
+  }
+
+  &:active {
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+// Whitney
+@mixin font-one($size, $height, $weight) {
+  font-family: $f_one;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+// Whitney Book
+@mixin font-two($size, $height) {
+  font-family: $f_two;
+  font-size: $size;
+  line-height: $height;
+  font-weight: normal;
+}
+
+// Segoe
+@mixin font-three($size, $height) {
+  font-family: $f_three;
+  font-size: $size;
+  line-height: $height;
+  font-weight: normal;
+}
+
+@mixin title-one {
+  @include font-one(50px, 1.2, $semi);
+  color: $c_title;
+
+  @include tablet {
+    @include font-one(45px, 1.2, $semi);
+  }
+
+  @include mobile {
+    @include font-one(35px, 1.2, $semi);
+  }
+}
+
+@mixin title-two {
+  @include font-one(40px, 2, $semi);
+  color: $c_title;
+
+  @include mobile {
+    @include font-one(30px, 1.5, $semi);
+  }
+}
+
+@mixin title-three {
+  @include font-three(22px, 1.5);
+  color: $c_title;
+  letter-spacing: 0.5px;
+
+  @include mobile {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}

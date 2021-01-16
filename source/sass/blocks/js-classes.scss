@@ -1,0 +1,17 @@
+.js-overflow-hidden {
+  overflow: hidden;
+}
+
+.js-display-block {
+  display: block;
+}
+
+.js-bg {
+  @include mobile {
+    background-color: $c_dark-one;
+  }
+}
+
+.js-static {
+  position: static;
+}

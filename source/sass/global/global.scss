@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: inherit;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+
+  @include font-three(16px, 1.35);
+  color: $c_text;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
